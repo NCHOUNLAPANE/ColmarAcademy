@@ -1,0 +1,119 @@
+
+/* Universal Styles*/
+
+html {
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles*/
+
+header {
+  font-size: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  border: 1px solid red;
+}
+
+header span {
+  color: #4a4a4a;
+}
+
+header ul {
+  list-style-type: none;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+header ul li {
+  margin: 0 16px;
+}
+
+/* Banner Styles*/
+
+.banner_container {
+  display: flex;
+  align-items: center;
+  background-color: #d8d8d8;
+}
+
+.banner_container img {
+  margin: 32px 24px;
+  width: 58%;
+}
+
+.banner_description {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.banner_description span, .banner_description .start_button {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.start_button {
+  border: 1px solid red;
+  text-align: center;
+  padding: 8px 0px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.start_button span {
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+/* Main Styles*/
+
+.main_container {
+  border: 1px solid red;
+  display: inline-flex;
+}
+
+.main_description {
+  border: 1px solid red;
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.main_description img {
+  width: 100%;
+}
+
+.main_nav {
+  width: 40%;
+  border: 1px solid red;
+  margin: 32px 0px;
+}
+
+.nav_container {
+  display: inline-flex;
+  margin: 16px 16px;
+  border: 1px solid blue;
+}
+
+.nav_container img {
+  height: auto;
+  width: 35%;
+}
+
+.nav_details {
+  width: 65%;
+  padding: 80px 0px;
+  display: inline-flex;
+  flex-direction: column;
+  word-wrap: normal;
+}
+
+.nav_details h3, .nav_details span, .nav_details a {
+  margin: 4px 0px;
+}
