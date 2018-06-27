@@ -72,24 +72,31 @@ header ul li {
   margin-top: 8px;
 }
 
-/* Main Styles*/
+/* Main Styles, Thesis Styles*/
 
-.main_container {
+.main_container, .thesis_container {
   border: 1px solid red;
   display: inline-flex;
+  justify-content: space-between;
 }
 
-.main_description {
+.main_description, .thesis_description {
   border: 1px solid red;
   margin: 32px 24px;
   width: 60%;
 }
 
-.main_description img {
+.main_text, .thesis_text {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main_description img, .thesis_description video {
   width: 100%;
 }
 
-.main_nav {
+.main_nav, .thesis_nav {
   width: 40%;
   border: 1px solid red;
   margin: 32px 0px;
@@ -97,23 +104,94 @@ header ul li {
 
 .nav_container {
   display: inline-flex;
-  margin: 16px 16px;
+  margin-bottom: 16px;
   border: 1px solid blue;
+  width: 100%;
 }
 
-.nav_container img {
-  height: auto;
+.nav_container img, .thesis_nav img {
+  height: 33%;
   width: 35%;
 }
 
-.nav_details {
+.nav_container .nav_details, .thesis_container .thesis_nav_details {
   width: 65%;
-  padding: 80px 0px;
+  padding: 45px 0px;
+  margin-left: 8px;
   display: inline-flex;
   flex-direction: column;
-  word-wrap: normal;
 }
 
-.nav_details h3, .nav_details span, .nav_details a {
+.nav_details h3, .nav_details span, .nav_details a,
+ .thesis_nav_details h3, .thesis_nav_details span{
   margin: 4px 0px;
+}
+
+/* Learning Styles*/
+
+.learning_container {
+    border: 1px solid green;
+}
+
+.learning_header h1, .thesis_header h1 {
+  text-align: center;
+  margin: 32px 0px;
+}
+
+.course_container {
+  border: 1px solid green;
+  margin: 0px 72px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.course_block {
+  border: 1px solid purple;
+  width: 31%;
+  margin-bottom: 32px;
+}
+
+.course_block img {
+  height: auto;
+  width: 100%;
+}
+
+#middle_block {
+  margin: 0px 32px 32px 32px;
+}
+
+/* Thesis Styles*/
+
+.thesis_description video {
+
+}
+
+.thesis_nav_container {
+  display: inline-flex;
+  margin: 16px 0px;
+  border: 1px solid blue;
+  width: 100%;
+}
+
+/* Footer Styles*/
+
+footer {
+  padding: 16px 0px 48px 24px;
+  width: 100%;
+  border: 1px solid blue;
+  display: inline-flex;
+  box-sizing: border-box;
+}
+
+.footer_links {
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+/* Mobile Styles*/
+
+@media only screen and (max-width: 600px) {
+
 }
