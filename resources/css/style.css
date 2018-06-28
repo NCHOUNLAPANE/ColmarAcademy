@@ -1,3 +1,12 @@
+/*********************************
+Colmar Academy Capstone Project
+Author: Nicholas Chounlapane
+
+Developer Notes:
+-Was not able to apply a play button overlay due to time
+-rem could of been implemented
+********************************/
+
 
 /* Universal Styles*/
 
@@ -158,8 +167,13 @@ header ul li:hover {
   justify-content: space-between;
 }
 
-.main_description, .thesis_description {
+.main_description{
   margin: 32px 24px;
+  width: 60%;
+}
+
+.thesis_description {
+  margin: 16px 24px;
   width: 60%;
 }
 
@@ -276,8 +290,6 @@ header ul li:hover {
   background-color: #EAEBEC;
   border: 1px solid #EAEBEC;
 }
-
-
 
 @media only screen and (max-width: 480px) {
   .course_block img, .course_text p{
