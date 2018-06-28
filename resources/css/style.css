@@ -2,12 +2,34 @@
 /* Universal Styles*/
 
 html {
-
+  color: #4A4A4A;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4C3737;
+}
+
+#mobile_asset {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #mobile_asset {
+    display: initial;
+  }
+  #fullsite_asset {
+    display: none;
+  }
 }
 
 /* Header Styles*/
@@ -21,8 +43,13 @@ header {
   border: 1px solid red;
 }
 
+header img {
+  margin-left: 24px;
+  height: 48px;
+}
+
 header span {
-  color: #4a4a4a;
+  font-size: 24px;
 }
 
 header ul {
@@ -34,6 +61,19 @@ header ul {
 
 header ul li {
   margin: 0 16px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  header ul, header span {
+    display: none;
+  }
+  .header_icons_container {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-right: 24px;
+    width: 100%;
+  }
 }
 
 /* Banner Styles*/
@@ -70,6 +110,17 @@ header ul li {
 .start_button span {
   padding-top: 8px;
   margin-top: 8px;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner_container {
+    flex-direction: column;
+  }
+  .banner_container img {
+    margin-top: 0px;
+    width: 100%;
+    border: 1px solid red;
+  }
 }
 
 /* Main Styles, Thesis Styles*/
@@ -112,6 +163,7 @@ header ul li {
 .nav_container img, .thesis_nav img {
   height: 33%;
   width: 35%;
+  margin: 16px 0px 16px 16px;
 }
 
 .nav_container .nav_details, .thesis_container .thesis_nav_details {
@@ -122,9 +174,41 @@ header ul li {
   flex-direction: column;
 }
 
-.nav_details h3, .nav_details span, .nav_details a,
- .thesis_nav_details h3, .thesis_nav_details span{
-  margin: 4px 0px;
+.nav_details a {
+  margin-top: 8px;
+}
+
+.course_text {
+  margin: 4px 0px 24px 16px;
+}
+
+.nav_container:hover, .thesis_nav_container:hover {
+  background-color: #d8d8d8;
+}
+
+.nav_container, .thesis_nav_container {
+  transition: background-color .15s ease-in .15s;
+}
+
+@media only screen and (max-width: 480px) {
+  .main_description {
+    display: none;
+  }
+  .main_nav {
+    width: 100%;
+  }
+  .nav_container {
+    flex-direction: column;
+  }
+  .nav_container img {
+    margin: 16px;
+    width: 90%;
+  }
+  .nav_container .nav_details {
+    padding: 0px;
+    margin: 0 0 32px 16px;
+    border: 1px solid red;
+  }
 }
 
 /* Learning Styles*/
@@ -145,12 +229,14 @@ header ul li {
   flex-wrap: wrap;
   justify-content: space-between;
   overflow-x: hidden;
+
 }
 
 .course_block {
   border: 1px solid purple;
   width: 31%;
   margin-bottom: 32px;
+  background-color: white;
 }
 
 .course_block img {
@@ -160,6 +246,40 @@ header ul li {
 
 #middle_block {
   margin: 0px 32px 32px 32px;
+}
+
+.learning_container {
+  background-color: #EAEBEC;
+}
+
+@media only screen and (max-width: 480px) {
+  .course_block img, .course_block span {
+    display: none;
+  }
+  .course_container {
+    flex-direction: column;
+  }
+
+  .learning_header h1{
+    margin: 32px 0px 8px 0px;
+  }
+
+  .course_container {
+    margin: 0 16px 24px 16px;
+    width: 92%;
+  }
+
+  .course_block {
+    margin: 8px 0px 8px 0px;
+    width: 100%;
+    background-color: #d8d8d8;
+  }
+  #middle_block {
+    margin: 0px;
+  }
+  .course_block h3 {
+    padding: 16px 0px 24px 16px;
+  }
 }
 
 /* Thesis Styles*/
@@ -173,6 +293,24 @@ header ul li {
   margin: 16px 0px;
   border: 1px solid blue;
   width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  .thesis_nav, .thesis_text {
+    display: none;
+  }
+
+  .thesis_header h1 {
+    margin: 16px 0px 16px 0px;
+  }
+
+  .thesis_description {
+    width: 100%;
+    margin: 0px 0px;
+  }
+  .thesis_nav_container {
+    margin: 0px 0px 24px 0px;
+  }
 }
 
 /* Footer Styles*/
@@ -190,8 +328,16 @@ footer {
   margin-right: 16px;
 }
 
-/* Mobile Styles*/
+@media only screen and (max-width: 480px) {
+  .footer_links {
+    display: none;
+  }
 
-@media only screen and (max-width: 600px) {
+  footer {
+    margin: 16px 0px 16px 0px;
+    padding: 0px 0px 0px 0px;
+  }
 
 }
+
+/* Mobile Styles*/
